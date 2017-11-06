@@ -2,6 +2,8 @@
 
 import React from "react";
 import Target from "./target";
+import createReactClass from 'create-react-class';
+import PropTypes from 'prop-types';
 
 const targets = [{
     name: "Banana"

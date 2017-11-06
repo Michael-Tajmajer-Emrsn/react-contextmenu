@@ -6,7 +6,7 @@ export default function(Component) {
         || Component.name
         || "Component";
 
-    return React.createClass({
+    return createReactClass ({
         displayName: `ContextMenuConnector(${displayName})`,
         getInitialState() {
             return {

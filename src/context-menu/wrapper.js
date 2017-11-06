@@ -1,5 +1,6 @@
 import React from "react";
 import monitor from "../monitor";
+import createReactClass from 'create-react-class';
 
 import Modal from "react-overlays/lib/Modal";
 
@@ -21,7 +22,7 @@ const modalStyle = {
         zIndex: "auto"
     };
 
-let ContextMenuWrapper = React.createClass({
+let ContextMenuWrapper = createReactClass({
     displayName: "ContextMenuWrapper",
     getInitialState() {
         return {

@@ -1,6 +1,7 @@
 import React from "react";
 import invariant from "invariant";
 import _isObject from "lodash.isobject";
+import createReactClass from 'create-react-class';
 
 import store from "./redux/store";
 
@@ -27,7 +28,7 @@ export default function(identifier, configure) {
         }
 
 
-        return React.createClass({
+        return createReactClass({
             displayName: `${displayName}ContextMenuLayer`,
             getDefaultProps() {
                 return {

@@ -1,10 +1,11 @@
 import React from "react";
 import store from "../redux/store";
 import ContextWrapper from "./wrapper";
+import createReactClass from 'create-react-class';
+import PropTypes from 'prop-types';
+//let { PropTypes } = React;
 
-let { PropTypes } = React;
-
-const ContextMenu = React.createClass({
+const ContextMenu = createReactClass({
     displayName: "ContextMenu",
     propTypes: {
         identifier: PropTypes.string.isRequired
