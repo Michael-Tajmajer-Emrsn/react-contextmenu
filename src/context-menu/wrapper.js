@@ -37,8 +37,10 @@ let ContextMenuWrapper = createReactClass({
             wrapper(() => {
                 if(this.menu) {
                     this.setState(this.getMenuPosition(nextProps.x, nextProps.y));
+                    // MDT: fix crash
+                    this.menu.parentNode.addEventListener("contextmenu", this.hideMenu);
                 }
-                this.menu.parentNode.addEventListener("contextmenu", this.hideMenu);
+                //this.menu.parentNode.addEventListener("contextmenu", this.hideMenu);
             });
         }
     },
